@@ -1,0 +1,14 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Go Wiki</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <h1>{{ .Title }}</h1>
+    <p><button>
+            <a href="/edit/{{.Title}}">edit</a>
+    </button>
+</p>
+    <div>{{ printf "%s" .Body }}</div>
+</body>

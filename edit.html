@@ -1,0 +1,16 @@
+<head>
+    <title>Go Wiki</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <h1>Editing </h1>
+    <form action="/save/{{.Title}}" method="POST">
+        <div>
+            <textarea id="" name="body" cols="80" rows="20">
+                    {{ printf "%s" .Body }}
+                </textarea>
+            <div><input type="submit" value="Save"></div>
+        </div>
+    </form>
+</body>
